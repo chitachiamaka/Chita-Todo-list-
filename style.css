@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{ 
+    background: #093b09 url(img.jpg);
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    padding: 30px;
+    text-align: center
+}
+nav .logo{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.container-1{
+    width: 90%;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 15px #000000cc;
+}
+.container-1 .inputCon{
+    background-color: #000000cc;
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+}
+.container-1 .inputCon .input-type{
+    width: 100%;
+    margin: 20px 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.container-1 .inputCon .input-type .form{
+    width: 70%;
+    height: 100%;
+    outline: none;
+    padding-left: 5px;
+
+}
+.container-1 .inputCon .input-type a{
+    background-color: green;
+    text-decoration: none;
+    color: #fff ;
+    padding: 15px 40px;
+}
+.error{
+    color: red;
+}
+ul{
+    width: 100%;
+}
+ul li{
+    list-style: none;
+    padding: 15px 0 15px 20px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    animation: listup .3s linear alternate;
+}
+@keyframes listup {
+    0%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+ul li:hover{
+    background-color: #0cb94e;
+}
+ul li .close{
+    background-color: #eee;
+    width: 40px;
+    text-align: center;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    line-height: 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul li .close:hover{
+    background-color: #4d884d;
+    color: #fff;
+}
+@media screen and (max-width: 380px) {
+    .container-1 .container-2{
+        padding: 30px 10px;
+    }
+    .container-1 .input .input-type a{
+        padding: 15px 20px;
+    }
+}
